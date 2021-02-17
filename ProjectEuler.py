@@ -4,8 +4,8 @@
 Найдите сумму всех чисел меньше 1000, кратных 3 или 5.
 '''
 
-num_list1 = [num for num in range(1001) if num % 3 == 0 or num % 5 == 0]
-rezult = sum(num_list1)
+num_list = [num for num in range(1001) if num % 3 == 0 or num % 5 == 0]
+rezult = sum(num_list)
 print(rezult)
 
 ''' 2)
@@ -16,3 +16,12 @@ print(rezult)
 Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают четыре миллиона.
 
 '''
+
+
+def fibo(n):
+	fibo_list = []
+	a, b = 0, 1
+	while b < 20:
+		a, b = b, a + b
+		fibo_list.append(a)
+	print(fibo_list(n))
