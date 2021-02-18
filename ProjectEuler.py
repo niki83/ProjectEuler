@@ -17,11 +17,10 @@ print(rezult)
 
 '''
 
+s, a, b = 0, 1, 2
+while b < 4000000:
+    if b % 2 == 0:
+        s += b
+    a, b = b, a + b
 
-def fibo(n):
-	fibo_list = []
-	a, b = 0, 1
-	while b < 20:
-		a, b = b, a + b
-		fibo_list.append(a)
-	print(fibo_list(n))
+print(s)
