@@ -26,3 +26,4 @@
 # print(s)
 
 import this
+import antigravity
