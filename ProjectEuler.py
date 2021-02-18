@@ -27,5 +27,3 @@
 
 import this
 import antigravity
-
-###
