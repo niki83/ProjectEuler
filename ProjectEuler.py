@@ -23,4 +23,4 @@ while b < 4000000:
         s += b
     a, b = b, a + b
 
-print(s)
+print(s) #fsfsfsfsdf
