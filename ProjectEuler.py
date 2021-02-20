@@ -15,8 +15,6 @@
 #
 # Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают четыре миллиона.
 
-
-
 # s, a, b = 0, 1, 2
 # while b < 4000000:
 #     if b % 2 == 0:
@@ -25,5 +23,25 @@
 #
 # print(s)
 
-import this
-import antigravity
+# import this
+# import antigravity
+
+# Простые делители числа 13195 - это 5, 7, 13 и 29.
+#
+# Каков самый большой делитель числа 600851475143, являющийся простым числом?
+
+def primfacs():
+    i = 2
+    primfac = []
+    n = int(input("Input number: "))
+    while i * i <= n:
+        while n % i == 0:
+            primfac.append(i)
+            n = n / i
+        i = i + 1
+    if n > 1:
+        primfac.append(n)
+    return primfac
+
+print(primfacs())
+print(max(primfacs()))
